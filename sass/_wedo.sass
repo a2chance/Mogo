@@ -1,0 +1,174 @@
+.wedo
+	padding-bottom: 99px
+
+.wedo__row
+	margin: 92px -15px 120px 
+	display: flex
+
+.wedo__col-img 
+	width: 50%
+	padding: 0 15px
+
+.wedo__img 
+	max-width: 100%
+	height: auto
+
+.wedo__col-text 
+	width: 50%
+	padding: 0 15px
+
+.wedo__text-photo 
+	padding: 25px 0 25px 60px
+	border: 1px solid #eaeaea
+	position: relative
+	&::after
+		content: ""
+		display: block 
+		width: 15px
+		height: 15px
+		border-right: 1px solid silver
+		border-top: 1px solid silver
+		position: absolute 
+		top: 29px
+		right: 20px
+		transform: 
+		transform: rotate(-45deg)
+	div:first-child
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 16px
+		color: #95e1d3
+		font-size: 30px
+	div:last-child
+		color: #333
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase
+		
+
+.wedo__text-par 
+	color: #999
+	font-family: "Roboto"
+	font-weight: 300
+	line-height: 1.6
+	padding: 15px 55px 17px 20px
+	font-style: italic
+	border-left: 1px solid #eaeaea
+	border-right: 1px solid #eaeaea
+
+.wedo__text-creativity
+	padding: 25px 0 25px 60px
+	border: 1px solid #eaeaea
+	position: relative
+	margin: 3px 0
+	&::after
+		content: ""
+		display: block 
+		width: 15px
+		height: 15px
+		border-right: 1px solid silver
+		border-top: 1px solid silver
+		position: absolute 
+		top: 29px
+		right: 20px
+		transform: 
+		transform: rotate(130deg)
+	div:first-child
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 16px
+		color: #95e1d3
+		font-size: 30px
+	div:last-child
+		color: #333
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase 
+
+.wedo__text-web
+	padding: 25px 0 25px 60px
+	border: 1px solid #eaeaea
+	position: relative
+	&::after
+		content: ""
+		display: block 
+		width: 15px
+		height: 15px
+		border-right: 1px solid silver
+		border-top: 1px solid silver
+		position: absolute 
+		top: 29px
+		right: 20px
+		transform: 
+		transform: rotate(130deg)
+	div:first-child
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 16px
+		color: #95e1d3
+		font-size: 30px
+	div:last-child
+		color: #333
+		font-size: 14px
+		font-weight: 700
+		text-transform: uppercase 
+
+//=======================================================================
+
+@media (max-width: 1230px)
+	.wedo
+		padding-bottom: 50px
+
+	.wedo__row
+		margin: 70px -15px 90px
+//========================================================================
+
+@media (max-width: 992px)
+	.wedo
+		padding-bottom: 0px
+
+	.wedo__row
+		margin: 50px -15px 70px
+
+	.wedo__col-img
+		display: none
+
+	.wedo__col-text
+		width: 100%
+
+	.range
+		padding: 30px 0
+
+	.range__inner
+		align-items: center
+		justify-content: space-between
+
+	.range__img
+		margin: 0 50px 0 30px
+		width: 120px
+		height: 100px
+		img 
+			width: 50px
+			height: 50px
+
+	.range__text
+		width: auto
+		margin-left: 0
+		padding-right: 20px
+
+	.range__par
+		font-size: 19px
+
+//================================================================================================
+@media ( max-width: 480px )
+	.range__inner
+		flex-flow: column wrap
+
+	.range__img
+		margin-bottom: 15px
+
+	.range__par
+		text-align: justify

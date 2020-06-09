@@ -1,0 +1,214 @@
+.intro__wrapper 
+	min-height: 100vh
+	background: url(../img/intro/bg.jpg)no-repeat center top / cover
+
+.intro 
+	min-height: 100vh
+	background: linear-gradient(to top, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9))
+
+.intro__inner 
+	display: flex
+	flex-flow: column nowrap
+	justify-content: space-between
+	height: 100vh
+	padding: 28px 0
+
+.intro__header 
+	display: flex
+	justify-content: space-between
+	align-items: baseline
+
+.header__logo 
+
+.header__logo-item 
+	color: #fff
+	font-size: 30px
+	font-weight: 700
+	transition: color .3s
+	&:hover
+		color: #fce38a
+
+.intro__header-nav 
+
+.intro__header-nav-item
+	color: #fff
+	font-size: 14px
+	text-transform: uppercase
+	margin-left: 55px
+	display: inline-block
+	position: relative
+	transition: color .3s
+	&:after
+		content: ""
+		display: block
+		width: 100%
+		height: 3px
+		background-color: #fce38a
+		opacity: 0
+		margin-top: 12px
+	&:hover
+		color: #fce38a
+		&::after
+			opacity: 1
+	&:last-child
+		margin-left: 42px
+
+
+.intro__body 
+	text-align: center
+	color: #fff
+
+.intro__body-sub-title 
+	font-family: "Kaushan Script"
+	font-size: 72px
+	margin-bottom: 40px
+
+.intro__body-title 
+	font-size: 150px
+	font-weight: 700
+	line-height: .9
+	text-transform: uppercase
+	&::after
+		content: ""
+		display: block 
+		width: 60px
+		height: 3px
+		background-color: #fff
+		margin: 71px auto 50px
+
+.link 
+
+.link-item 
+	color: #fff
+	font-size: 14px
+	font-weight: 700
+	text-transform: uppercase
+	padding: 15px 33px
+	display: inline-block
+	border: 3px solid #fff
+	transition: background .3s
+	&:hover
+		background: pink
+	&:active
+		transform: translateY(5px)
+
+.intro__footer 
+
+.intro__footer-row 
+	display: flex
+	margin: 0 -15px
+
+.intro__col-wrapper
+	padding: 0 15px
+	width: 25%
+
+.intro__footer-col 
+	color: #faf3dc
+	font-size: 18px
+	text-transform: uppercase
+	width: 100%
+	border-top: 3px solid #f6eac4
+	position: relative
+	padding-top: 25px
+	span
+		font-size: 24px
+		font-weight: 700
+		margin-right: 5px
+
+
+.intro__footer-col--first 
+	color: #fff
+	border-top: 3px solid #fff
+	&::after
+		content: ""
+		display: block 
+		position: absolute
+		top: -3px
+		left: 0
+		width: 25%
+		height: 3px
+		background: #f38181
+
+//============================================================================
+
+@media ( max-width: 1230px )
+	.intro__header-nav-item
+		margin-left: 35px
+		&:last-child
+			margin-left: 25px
+
+	.intro__body-sub-title 
+		font-size: 65px
+
+	.intro__body-title
+		font-size: 130px
+
+	.link-item
+		font-size: 12px
+		border: 2px solid #fff
+//=====================================================================
+
+@media ( max-width: 992px )	
+	.intro__header
+		justify-content: center
+
+	.header__logo-item 
+		display: none
+
+	.intro__header-nav 
+		align-self: center
+		font-size: 12px
+
+		.intro__body-sub-title 
+			font-size: 55px
+
+	.intro__body-title
+		font-size: 110px
+//========================================================================
+
+@media ( max-width: 768px )
+	.intro__header-nav-item
+		font-size: 15px
+
+	.intro__body-sub-title 
+		font-size: 35px
+
+	.intro__body-title
+		font-size: 80px
+
+	.intro__footer-col
+		text-align: center 
+	span
+		display: none
+//==========================================================================
+
+@media ( max-width: 480px	)
+	.header__logo-item 
+		display: block
+
+	.intro__header-nav 
+		display: none
+
+	.intro__body-sub-title 
+		font-size: 35px
+		margin-bottom: 30px
+
+	.intro__body-title
+		font-size: 60px
+		line-height: 1
+		&::after
+			margin: 20px auto 100px
+
+	.intro__footer-col
+		display: none
+
+//========================================================================
+
+@media ( max-width: 320px )
+	.intro__body-sub-title 
+		font-size: 30px
+		margin-bottom: 30px
+
+	.intro__body-title
+		font-size: 50px
+		line-height: 1

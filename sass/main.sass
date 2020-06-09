@@ -1,0 +1,207 @@
+//<FONTS>=============================================================
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap')
+//</FONTS>============================================================
+
+//<ICONS>=============================================================
+
+//</ICONS>============================================================
+
+//<VARIABLES>=========================================================
+
+//</VARIABLES>========================================================
+
+//<TEMPLATES>=========================================================
+
+//</TEMPLATES>========================================================
+	
+//<MIXINS>============================================================
+
+//</MIXINS>===========================================================
+
+//</ZERO-FILE>========================================================
+@import "_zero"
+//</ZERO-FILE>========================================================
+
+//<GENERAL STRUCTURE>=================================================
+.wrapper
+	display: flex
+	flex-flow: column nowrap 
+	overflow: hidden
+
+.content
+	flex: 1 0 auto
+//</GENERAL STRUCTURE>================================================
+
+//<GENERAL PROPERTY>==================================================
+.container
+	max-width: 1230px
+	padding: 0 15px
+	margin: 0 auto 
+
+.title-block 
+	text-align: center
+	color: #333
+	max-width: 960px
+	margin: 0 auto
+
+.sub-title 
+	font-family: "Kaushan Script"
+	font-size: 24px
+	margin-bottom: 23px
+
+.title 
+	font-size: 30px
+	font-weight: 700
+	text-transform: uppercase
+	&::after
+		content: ""
+		display: block 
+		background: #f38181
+		margin: 0 auto
+		width: 60px
+		height: 3px
+		margin-top: 40px
+
+.sup-title 
+	color: #999
+	font-family: Roboto
+	line-height: 1.6
+	margin-top: 47px
+
+.gallery 
+	display: flex
+	margin: 101px -15px 0
+
+.gallery__wrapper
+	width: 33.333% 
+	padding: 0 15px
+
+.gallery__col 
+	background: #95e1d3
+	position: relative
+	&:hover .gallery__img-item
+		transform: translate3d(-10px, -10px, 0)
+	&:hover .gallery__inside
+		opacity: 1
+		transform: translate3d(-10px, -10px, 0)
+
+.gallery__img-item 
+	max-width: 100%
+	height: auto
+	transition: transform .3s
+
+.gallery__inside 
+	position: absolute
+	top: 0
+	left: 0
+	background: linear-gradient(to top, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9))
+	width: 100%
+	height: 100%
+	display: flex
+	opacity: 0
+	transition: opacity .3s, transform .3s
+
+.gallery__inside-content 
+	margin: auto 
+	text-align: center
+	color: #fff
+	font-size: 18px
+
+.gallery__inside-title 
+	font-weight: 700
+	text-transform: uppercase
+	margin-top: 11px
+
+.range 
+	background: #f8f8f8
+	padding: 70px 0
+
+.range__wrapper	
+	position: relative
+	&::before
+		content: ""
+		display: block 
+		width: 15px
+		height: 15px
+		border-right: 1px solid silver
+		border-top: 1px solid silver
+		position: absolute 
+		top: 45px
+		left: 0
+		transform: rotate(-130deg) translateY(-50%)
+	&::after
+		content: ""
+		display: block
+		width: 15px
+		height: 15px
+		border-right: 1px solid silver
+		border-top: 1px solid silver
+		position: absolute
+		top: 45px
+		right: 0
+		transform: rotate(45deg) translateY(-50%)
+
+.range__inner 
+	max-width: 980px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+
+.range__img 
+	display: flex
+	width: 150px
+	height: 150px
+	border: 3px solid #95e1d3
+	img 
+		margin: auto
+
+.range__text 
+	max-width: 770px
+	margin-left: auto
+
+.range__par 
+	font-style: italic
+	color: #999
+	font-family: "Roboto"
+	font-size: 24px
+	font-weight: 300
+	line-height: 1.5
+	margin-bottom: 20px
+
+.range__name 
+	color: #333
+	font-family: "Kaushan Script"
+	font-size: 24px
+	padding-left: 65px
+	position: relative
+	&::before
+		content: ""
+		display: inline-block 
+		width: 60px
+		height: 3px
+		background-color: #f38181
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translateY(-50%)
+
+
+
+//</GENERAL PROPERTY>=================================================
+
+//<IMPORT SASS-FILES>=================================================
+@import "_intro"
+@import "_story"
+@import "_services"
+@import "_unique"
+@import "_wedo"
+@import "_team"
+@import "_work"
+@import "_clients"
+@import "_blog"
+@import "_map"
+@import "_footer"
+//</IMPORT SASS-FILES>================================================
+
+
+

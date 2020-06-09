@@ -1,0 +1,104 @@
+.work 
+	padding: 110px 0 30px
+
+.work__inner 
+
+.work__row 
+	margin: 102px 0 50px
+	display: flex
+
+.work__col 
+	width: 25%
+
+.work__col-item
+	position: relative 
+	&:hover
+		.work__col-inside 
+			opacity: 1
+
+.work__col-inside 
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: linear-gradient(to top, rgba(252, 227, 138, .9), rgba(243, 129, 129, .9))
+	display: flex
+	flex-flow: column
+	justify-content: center
+	align-items: center
+	opacity: 0
+	transition: opacity .3s
+
+.work__col--icon 
+	font-size: 40px
+	margin-bottom: 17px
+	color: #fff
+
+.work__col--title 
+	font-size: 14px
+	text-transform: uppercase
+	margin-bottom: 15px
+	color: #fff
+	transition: color .3s
+	&:hover
+		text-decoration: underline
+		color: gray
+
+.work__col--sup-title 
+	font-style: italic
+	font-family: "Roboto"
+	font-weight: 300
+	line-height: 1.6
+	color: #fff
+	transition: color .3s
+	&:hover
+		text-decoration: underline
+		color: gray
+
+.range-work
+	background: #fff
+
+.range__inner--work
+	max-width: 1000px
+
+//===============================================================================
+@media (max-width: 992px)
+	.work__row
+		flex-wrap: wrap
+
+	.work__col
+		width: 50%
+		margin: 0
+
+	.work__col-item
+		margin-bottom: 10px
+
+//=================================================================================
+
+@media (max-width: 580px)
+	.work__row
+		justify-content: center
+
+	.work__col
+		width: 100%
+
+	.work__col-item
+		img
+			width: 100%
+
+	.range__inner
+		flex-wrap: wrap 
+		justify-content: center
+
+	.range__text
+		width: 100%
+
+	.range__img-work
+		margin-bottom: 10px
+		img 
+			width: 150px
+			height: 150px
+
+	.range__text
+		f
